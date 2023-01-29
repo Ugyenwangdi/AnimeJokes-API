@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Jokes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    
+
+    <header>
+        <h1 class="brand">Anime Jokes</h1>       
+        <p>{{success}}</p> 
+    </header>
+
+    <main>
+        <section class="joke_section">
+            <p class="joke">{{setup}} {{ punchline }}</p>
+        </section>
+    </main>
+
+    <div class="button_section">
+        <button class="button"><a href="{% url 'home' %}">Generate Joke</a></button>    
+    </div>
+    <hr>
+
+    <section class="submit_joke_section">
+
+        <h2>Have an Anime Joke?</h2>
+
+        <form method="post" class="form">
+            {% csrf_token %} 
+            <div class="name_anime_box">
+                <div class="form_div">
+                    <label for="name">Joke Author: </label>
+                    <input class="input" type="text" name="name" id="name">
+                </div>
+                <div class="form_div">
+                    <label for="anime">Joke Anime: </label>
+                    <input class="input" type="text" name="anime" id="anime" required>
+                </div>
+            </div>
+            
+            <div>
+              <label for="joke">Joke: </label>
+              <textarea class="input" id="joke" name="joke" required rows="4"></textarea>
+            </div> 
+            
+            <button class="button" type="submit">Submit</button>
+  
+        </form>
+    </section>
+
+    <footer>
+        
+        <span><a class="api_link" target="_blank" href="https://rapidapi.com/Wdzz/api/anime-jokes/">API</a></span>
+        <p>Made with ❤️ by Wulfi. 2023 </p>
+    </footer>
+    
+</body>
+</html>

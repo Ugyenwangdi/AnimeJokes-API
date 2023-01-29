@@ -1,0 +1,136 @@
+/* styles */
+
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #fbfaf6;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 30px 0;
+}
+
+hr {
+    border: dotted #646767 2px;
+    border-bottom: none;
+    width: 20%;
+    margin: 50px auto;
+}
+
+.brand {
+    font-weight: 900;
+}
+
+.joke_section {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px dotted rgb(171, 162, 162);
+    width: 60%;
+    background: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #4f4d4d, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.joke {    
+    font-size: 1.1rem;
+    margin: 19px auto 19px auto;
+    padding: 10px 10px;
+}
+
+.button_section {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background: #4227f2;
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.button:hover {
+    transition : 327ms;
+    padding: 9px 16px;
+    transform : translateY(-0px);
+    background: linear-gradient(90deg, #0066CC 0%, #d62828 100%);
+    color: #ffffff;
+    border: none;
+}
+
+.api_link {
+    margin-left: 50%;
+    font-size: 1rem;
+    color: blue;
+    padding: 8px 15px 8px 15px;
+}
+
+.submit_joke_section {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.submit_joke_section h2{
+    text-align: center;
+}
+
+.name_anime_box {
+    display: flex;
+}
+
+.name_anime_box + div {
+    margin: 10px 10px;
+}
+
+.form_div {
+    margin: 15px 10px;
+    width: 50%;
+}
+
+
+.input {
+    padding: 10px 6px;
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid rgb(171, 162, 162);
+}
+
+.input:focus{
+    outline: none;
+}
+
+
+.form button {
+    margin-left: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px 0 15px 0;
+}
+
+footer p {
+    padding: 4px 10px;
+}
